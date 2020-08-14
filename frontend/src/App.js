@@ -1,19 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
+import './global.css';
+import Logon from "./pages/Logon";
 
-import Header from "./Header";
 
 function App() {
-    const [counter, setCounter] = useState(0);
 
-    function increment(params) {
-        setCounter(counter + 1);
-
-    }
     return (
-        <div>
-            <Header>Contador:{counter}</Header>
-            <button onClick={increment} >Incrementar</button>
-        </div>
+        <Logon />
     );
 
 
